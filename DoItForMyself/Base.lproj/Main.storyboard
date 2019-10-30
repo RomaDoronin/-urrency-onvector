@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F2511" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tk6-qs-d3i">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="st4-ak-Ncl">
+            <objects>
+                <viewController storyboardIdentifier="mainView" id="tk6-qs-d3i" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yKK-1P-feD"/>
+                        <viewControllerLayoutGuide type="bottom" id="40Z-r8-gcx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbW-fi-Jn6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SG6-yq-z1J">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <color key="barTintColor" red="0.81607813467936396" green="0.81250475599670902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Main" id="lwh-MS-ViF">
+                                        <barButtonItem key="rightBarButtonItem" title="About" id="acN-KY-Ghk">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="aboutButtonClicked:" destination="tk6-qs-d3i" id="vuH-VE-7B1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-dX-05Z">
+                                <rect key="frame" x="16" y="90" width="288" height="51"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYN-b7-dIX">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="51"/>
+                                        <color key="textColor" red="0.035294117647058823" green="0.070588235294117646" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-DL-38s">
+                                        <rect key="frame" x="201" y="0.0" width="87" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="USD1">
+                                            <color key="titleColor" red="0.035294117647058823" green="0.070588235294117646" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="outputCurrencyButtonClicked:" destination="tk6-qs-d3i" eventType="touchUpInside" id="xp8-0l-uHw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 USD = 0.77777 EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-Qo-552">
+                                <rect key="frame" x="0.0" y="208" width="321" height="23"/>
+                                <color key="backgroundColor" red="0.53913321719984364" green="0.48496841270762314" blue="0.72062421082626271" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.047058823529411764" green="0.090196078431372548" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="77.77" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB8-eC-PWd">
+                                <rect key="frame" x="16" y="149" width="193" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-dp-c1J">
+                                <rect key="frame" x="88" y="256" width="143" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="CONVERT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonClicked:" destination="tk6-qs-d3i" eventType="touchUpInside" id="Oeb-zX-fM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNF-C6-2CE">
+                                <rect key="frame" x="217" y="149" width="87" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="EUR1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="realOutputCurrencyButtonClicked:" destination="tk6-qs-d3i" eventType="touchUpInside" id="Wlz-wW-xmV"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OA-2R-Npo">
+                                <rect key="frame" x="57" y="80" width="195" height="237"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOr-i8-Uie">
+                                        <rect key="frame" x="25" y="0.0" width="145" height="180"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jc-wC-zgx">
+                                        <rect key="frame" x="74" y="199" width="46" height="30"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="0.035294117647058823" green="0.070588235294117646" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okSubviewButtonClicked:" destination="tk6-qs-d3i" eventType="touchUpInside" id="bOe-UJ-L6e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.14486896891942366" blue="0.45945785984848486" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="acN-KY-Ghk" id="Ahc-FG-dNq"/>
+                        <outlet property="currencyPickerView" destination="ZOr-i8-Uie" id="4vc-fU-zvS"/>
+                        <outlet property="currentExchangeRateLabel" destination="qB9-Qo-552" id="MQW-tE-ZLE"/>
+                        <outlet property="inputCurrencyButton" destination="bAR-DL-38s" id="MQC-n0-CdD"/>
+                        <outlet property="inputValueTextField" destination="gYN-b7-dIX" id="PZ8-1Y-L87"/>
+                        <outlet property="labelCurrentExchangeRate" destination="qB9-Qo-552" id="oSE-CW-3DD"/>
+                        <outlet property="labelOutputValue" destination="pB8-eC-PWd" id="ZIl-0F-3lU"/>
+                        <outlet property="outoutCurrencyButton" destination="TNF-C6-2CE" id="YcV-rb-gkY"/>
+                        <outlet property="outputValueLabel" destination="pB8-eC-PWd" id="pI6-Yj-so1"/>
+                        <outlet property="subView" destination="8OA-2R-Npo" id="Ol3-Ji-Vx0"/>
+                        <outlet property="textFieldInputValue" destination="gYN-b7-dIX" id="Uhd-ot-DTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quk-2Z-uc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="303"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Pll-Ec-WNR">
+            <objects>
+                <viewController storyboardIdentifier="aboutView" id="5iP-ZL-kZw" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kdh-hb-9Y9"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrm-V7-tuw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zt4-k1-wlr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-Cj-DAv">
+                                <rect key="frame" x="46" y="91" width="228" height="87"/>
+                                <state key="normal" title="URL Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="urlButtonClicked:" destination="5iP-ZL-kZw" eventType="touchUpInside" id="RN4-u8-um1"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHh-5g-Guj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="About" id="EK0-BD-sG9">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="DM7-gZ-vhG">
+                                            <connections>
+                                                <action selector="closeButtonClicked:" destination="5iP-ZL-kZw" id="Gid-Pa-DNr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="©Roman Doronin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeN-mF-iHM">
+                                <rect key="frame" x="92" y="186" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="urlButton" destination="oIE-Cj-DAv" id="fwz-n7-Y82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Gt-Xj-IdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="303"/>
+        </scene>
+    </scenes>
+</document>
